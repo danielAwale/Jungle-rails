@@ -39,7 +39,7 @@ class OrdersController < ApplicationController
   def create_order(stripe_charge)
     order = Order.new(
       email: params[:stripeEmail],
-      total_cents: cart_subtotal_cents * 100,
+      total_cents: cart_subtotal_cents,
       stripe_charge_id: stripe_charge.id, # returned by stripe
     )
 
