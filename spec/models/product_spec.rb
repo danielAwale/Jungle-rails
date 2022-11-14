@@ -19,7 +19,7 @@ describe Product, type: :model do
     end
 
     it 'should check if price is present' do
-      @category = Category.new :name => 'some plants'
+      @category = Category.new :name => 'some'
       @product = Product.new(
         :name => 'jeesgh',
         :price_cents => nil,
